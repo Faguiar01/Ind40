@@ -1,65 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnologias Habilitadoras | Indústria 4.0</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/app.js"></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pilares Tecnológicos — Indústria 4.0</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Tecnologias Habilitadoras da Indústria 4.0</h1>
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">⚙️ Indústria 4.0</a>
+    <button class="burger">☰</button>
     <nav>
-  <a href="index.html">Início</a>
-  <a href="revolucoes.html">Revoluções Industriais</a>
-  <a href="tecnologias.html">Tecnologias</a>
-  <a href="impactos.html">Impactos</a>
-  <a href="referencias.html">Referências</a>
-</nav>
+      <a href="index.html">Início</a><a href="revolucoes.html">Revoluções</a>
+      <a href="tecnologias.html" class="active">Tecnologias</a>
+      <a href="impactos.html">Impactos</a><a href="atividades.html">Atividades</a>
+      <a href="referencias.html">Referências</a><button id="theme">🌙</button>
+    </nav>
+  </div><div id="bar"></div>
+</header>
 
-  </header>
+<main>
+  <p class="eyebrow">Os 9 pilares</p>
+  <h2>As tecnologias habilitadoras</h2>
+  <p class="sub">Clique em cada item para expandir a explicação e ver aplicações reais.</p>
 
-  <main>
-    <section>
-      <h2>Os nove pilares</h2>
-      <table>
-        <thead>
-          <tr><th>Tecnologia</th><th>Aplicação industrial</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Internet das Coisas (IoT)</td><td>Sensores conectados monitorando máquinas em tempo real</td></tr>
-          <tr><td>Big Data e Analytics</td><td>Análise de grandes volumes de dados para decisão</td></tr>
-          <tr><td>Computação em Nuvem</td><td>Armazenamento e processamento distribuído</td></tr>
-          <tr><td>Inteligência Artificial</td><td>Manutenção preditiva e controle de qualidade</td></tr>
-          <tr><td>Robótica Colaborativa</td><td>Cobots atuando junto aos operadores</td></tr>
-          <tr><td>Manufatura Aditiva</td><td>Impressão 3D de peças e protótipos</td></tr>
-          <tr><td>Realidade Aumentada</td><td>Treinamento e assistência remota</td></tr>
-          <tr><td>Simulação / Gêmeo Digital</td><td>Réplica virtual da linha de produção</td></tr>
-          <tr><td>Cibersegurança</td><td>Proteção de redes e dados industriais</td></tr>
-        </tbody>
-      </table>
-    </section>
+  <div class="acc"><button class="acc-h">🌐 Internet das Coisas Industrial (IIoT) <i>+</i></button>
+    <div class="acc-b"><div>Rede de sensores e atuadores embarcados em máquinas, produtos e veículos que
+    coletam e trocam dados continuamente. É a camada que "dá voz" ao chão de fábrica.
+    <br><br><b>Aplicação:</b> sensores de vibração e temperatura em motores enviam leituras a cada segundo,
+    permitindo detectar desalinhamento antes da quebra.</div></div></div>
 
-    <section>
-      <h2>Integração horizontal e vertical</h2>
-      <ul>
-        <li><strong>Vertical:</strong> integra o chão de fábrica aos sistemas de gestão (ERP/MES).</li>
-        <li><strong>Horizontal:</strong> conecta fornecedores, fábrica e clientes em toda a cadeia de valor.</li>
-      </ul>
-    </section>
+  <div class="acc"><button class="acc-h">🧠 Inteligência Artificial e Machine Learning <i>+</i></button>
+    <div class="acc-b"><div>Algoritmos que aprendem padrões nos dados e tomam decisões sem programação explícita.
+    <br><br><b>Aplicação:</b> visão computacional inspecionando 100% das peças na esteira e reprovando
+    defeitos invisíveis ao olho humano.</div></div></div>
 
-    <section>
-      <h2>Atividade proposta</h2>
-      <p>Escolha duas tecnologias da tabela e descreva, em um parágrafo cada,
-      como poderiam ser aplicadas em uma indústria da sua região.</p>
-    </section>
-  </main>
+  <div class="acc"><button class="acc-h">📊 Big Data e Analytics <i>+</i></button>
+    <div class="acc-b"><div>Tratamento de volumes massivos de dados (os 5 V: volume, velocidade, variedade,
+    veracidade e valor) para extrair insights operacionais.
+    <br><br><b>Aplicação:</b> cruzar dados de produção, clima e demanda para ajustar o planejamento semanal.</div></div></div>
 
-  <footer>
-    <p>Projeto acadêmico &middot; Indústria 4.0 &middot; <span id="ano"></span></p>
-  </footer>
+  <div class="acc"><button class="acc-h">☁️ Computação em Nuvem e Edge Computing <i>+</i></button>
+    <div class="acc-b"><div>A nuvem oferece capacidade elástica de armazenamento e processamento;
+    o edge processa dados junto à máquina, reduzindo latência.
+    <br><br><b>Aplicação:</b> edge aciona a parada de emergência em milissegundos; a nuvem guarda o histórico
+    para treinar modelos.</div></div></div>
 
-  <script src="assets/js/app.js"></script>
+  <div class="acc"><button class="acc-h">🪞 Gêmeo Digital (Digital Twin) <i>+</i></button>
+    <div class="acc-b"><div>Réplica virtual fiel de um ativo, processo ou fábrica, alimentada por dados reais.
+    Permite simular cenários sem risco.
+    <br><br><b>Aplicação:</b> testar uma nova sequência de montagem no modelo virtual antes de parar a linha real.</div></div></div>
+
+  <div class="acc"><button class="acc-h">🖨️ Manufatura Aditiva (Impressão 3D) <i>+</i></button>
+    <div class="acc-b"><div>Construção da peça camada por camada a partir do modelo digital.
+    Reduz desperdício e viabiliza geometrias impossíveis na usinagem.
+    <br><br><b>Aplicação:</b> impressão de peças de reposição sob demanda, eliminando estoque.</div></div></div>
+
+  <div class="acc"><button class="acc-h">🦾 Robótica Colaborativa (Cobots) <i>+</i></button>
+    <div class="acc-b"><div>Robôs com sensores de força e visão que operam ao lado de pessoas sem gaiolas
+    de proteção, assumindo tarefas repetitivas ou ergonomicamente críticas.
+    <br><br><b>Aplicação:</b> cobot aparafusa componentes enquanto o operador faz o ajuste fino.</div></div></div>
+
+  <div class="acc"><button class="acc-h">🥽 Realidade Aumentada e Virtual <i>+</i></button>
+    <div class="acc-b"><div>Sobreposição de informações digitais ao ambiente real (AR) ou imersão total (VR).
+    <br><br><b>Aplicação:</b> técnico usa óculos AR que projetam o passo a passo do reparo sobre o equipamento.</div></div></div>
+
+  <div class="acc"><button class="acc-h">🔐 Cibersegurança Industrial <i>+</i></button>
+    <div class="acc-b"><div>Proteção de redes OT (tecnologia operacional) contra ataques que podem parar a produção
+    ou causar acidentes físicos.
+    <br><br><b>Aplicação:</b> segmentação de rede, autenticação de dispositivos e monitoramento de anomalias.</div></div></div>
+
+  <section class="reveal" style="margin-top:3rem">
+    <h2>Casos reais</h2>
+    <p class="sub">Empresas que já operam sob a lógica 4.0.</p>
+    <div class="grid">
+      <div class="card"><h3>🇩🇪 Siemens — Amberg</h3><p>Fábrica onde máquinas coordenam a própria produção;
+        índice de qualidade próximo de 99,99% com mais de 1.000 dispositivos conectados.</p></div>
+      <div class="card"><h3>🇧🇷 Embraer</h3><p>Uso de gêmeos digitais e realidade aumentada na montagem
+        de aeronaves, reduzindo retrabalho e tempo de inspeção.</p></div>
+      <div class="card"><h3>🇧🇷 WEG</h3><p>Plataforma de motores conectados que entrega manutenção
+        preditiva como serviço aos clientes industriais.</p></div>
+      <div class="card"><h3>🇩🇰 Vestas</h3><p>Big Data meteorológico para posicionar turbinas eólicas
+        e maximizar a geração de energia.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><p>Projeto acadêmico sobre Indústria 4.0 — Fábio Aguiar · © 2026</p></footer>
+<button id="top">↑</button>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
