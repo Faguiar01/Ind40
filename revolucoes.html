@@ -1,56 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>As Revoluções Industriais | Indústria 4.0</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/app.js"></script>
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>As 4 Revoluções Industriais — Indústria 4.0</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>As Quatro Revoluções Industriais</h1>
-  <nav>
-  <a href="index.html">Início</a>
-  <a href="revolucoes.html">Revoluções Industriais</a>
-  <a href="tecnologias.html">Tecnologias</a>
-  <a href="impactos.html">Impactos</a>
-  <a href="referencias.html">Referências</a>
-  </nav>
-  </header>
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">⚙️ Indústria 4.0</a>
+    <button class="burger">☰</button>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="revolucoes.html" class="active">Revoluções</a>
+      <a href="tecnologias.html">Tecnologias</a>
+      <a href="impactos.html">Impactos</a>
+      <a href="atividades.html">Atividades</a>
+      <a href="referencias.html">Referências</a>
+      <button id="theme">🌙</button>
+    </nav>
+  </div><div id="bar"></div>
+</header>
 
-  <main>
-    <section id="primeira">
-      <h2>1ª Revolução Industrial (1760–1840)</h2>
-      <p>Marcada pela mecanização da produção com o uso do carvão e da máquina
-      a vapor. A indústria têxtil britânica foi o principal palco dessa transformação.</p>
-    </section>
+<main>
+  <p class="eyebrow">Linha do tempo</p>
+  <h2>Dois séculos e meio de transformação</h2>
+  <p class="sub">Role a página para percorrer as quatro revoluções industriais.</p>
 
-    <section id="segunda">
-      <h2>2ª Revolução Industrial (1870–1914)</h2>
-      <p>Caracterizada pela eletricidade, pelo aço, pelo petróleo e pela linha de
-      montagem introduzida por Henry Ford, que viabilizou a produção em massa.</p>
-    </section>
+  <div class="tl">
+    <div class="tl-item"><span class="yr">1784 · Indústria 1.0</span>
+      <h3>Mecanização e a máquina a vapor</h3>
+      <p>O tear mecânico e a máquina a vapor de James Watt substituem a força humana e animal.
+      A produção sai das oficinas artesanais e nasce a fábrica. Inglaterra lidera o processo.</p>
+      <ul class="li"><li>Carvão como matriz energética</li><li>Surgimento do proletariado urbano</li>
+      <li>Ferrovias e navios a vapor encurtam distâncias</li></ul></div>
 
-    <section id="terceira">
-      <h2>3ª Revolução Industrial (1950–1990)</h2>
-      <p>Também chamada de Revolução Digital: computadores, automação eletrônica,
-      controladores lógicos programáveis (PLCs) e o início da internet.</p>
-    </section>
+    <div class="tl-item"><span class="yr">1870 · Indústria 2.0</span>
+      <h3>Eletricidade e produção em massa</h3>
+      <p>A energia elétrica, o motor a combustão e a linha de montagem de Henry Ford permitem
+      produzir em grande escala e baixo custo. Taylorismo e fordismo organizam o trabalho.</p>
+      <ul class="li"><li>Aço, petróleo e química industrial</li><li>Divisão científica das tarefas</li>
+      <li>Produto padronizado para consumo de massa</li></ul></div>
 
-    <section id="quarta">
-      <h2>4ª Revolução Industrial (2011–hoje)</h2>
-      <p>A Indústria 4.0 conecta o mundo físico ao digital por meio de sistemas
-      ciberfísicos, Internet das Coisas, big data e inteligência artificial,
-      criando fábricas inteligentes e autônomas.</p>
-    </section>
-  </main>
+    <div class="tl-item"><span class="yr">1969 · Indústria 3.0</span>
+      <h3>Eletrônica, TI e automação</h3>
+      <p>O Controlador Lógico Programável (CLP), os computadores e a robótica automatizam
+      etapas inteiras da produção. Nasce a manufatura flexível e o just-in-time japonês.</p>
+      <ul class="li"><li>CLP, CNC e robôs industriais</li><li>Sistemas ERP e MRP</li>
+      <li>Globalização das cadeias produtivas</li></ul></div>
 
-  <footer>
-    <p>Projeto acadêmico &middot; Indústria 4.0 &middot; <span id="ano"></span></p>
-  </footer>
+    <div class="tl-item"><span class="yr">2011 · Indústria 4.0</span>
+      <h3>Sistemas ciber-físicos e conectividade</h3>
+      <p>Máquinas conectadas à internet geram dados analisados por IA. A fábrica se torna
+      inteligente, capaz de se autorregular, prever falhas e customizar em massa.</p>
+      <ul class="li"><li>IoT, Big Data, IA e computação em nuvem</li>
+      <li>Gêmeos digitais e manutenção preditiva</li>
+      <li>Customização em massa com eficiência de escala</li></ul></div>
 
-  <script src="assets/js/app.js"></script>
+    <div class="tl-item"><span class="yr">Hoje · Indústria 5.0</span>
+      <h3>O retorno do fator humano</h3>
+      <p>Proposta pela União Europeia, complementa a I4.0 com três eixos: colaboração
+      humano-máquina, sustentabilidade e resiliência das cadeias produtivas.</p></div>
+  </div>
+
+  <section class="reveal">
+    <h2>Comparativo</h2>
+    <p class="sub">Principais diferenças entre as quatro fases.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Fase</th><th>Período</th><th>Energia</th><th>Tecnologia-chave</th><th>Modelo de produção</th></tr></thead>
+      <tbody>
+        <tr><td>1.0</td><td>1784–1870</td><td>Vapor / carvão</td><td>Tear mecânico</td><td>Mecanizada</td></tr>
+        <tr><td>2.0</td><td>1870–1969</td><td>Eletricidade / petróleo</td><td>Linha de montagem</td><td>Massa</td></tr>
+        <tr><td>3.0</td><td>1969–2011</td><td>Nuclear / elétrica</td><td>CLP e computador</td><td>Automatizada</td></tr>
+        <tr><td>4.0</td><td>2011–hoje</td><td>Renováveis / híbrida</td><td>IoT + IA</td><td>Inteligente e customizada</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+</main>
+
+<footer><p>Projeto acadêmico sobre Indústria 4.0 — Fábio Aguiar · © 2026</p></footer>
+<button id="top">↑</button>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
