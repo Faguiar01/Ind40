@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impactos | Indústria 4.0</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/app.js"></script>
 </head>
 <body>
   <header>
-    <h1>Impactos da Indústria 4.0</h1>
-    <nav>
-  <a href="index.html">Início</a>
-  <a href="revolucoes.html">Revoluções Industriais</a>
-  <a href="tecnologias.html">Tecnologias</a>
-  <a href="impactos.html">Impactos</a>
-  <a href="referencias.html">Referências</a>
-</nav>
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">⚙️ Indústria 4.0</a>
+      <button class="burger">☰</button>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="revolucoes.html">Revoluções</a>
+        <a href="tecnologias.html">Tecnologias</a>
+        <a href="impactos.html" class="active">Impactos</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="referencias.html">Referências</a>
+        <button id="theme">🌙</button>
+      </nav>
+    </div>
+    <div id="bar"></div>
   </header>
 
   <main>
-    <section>
+    <h1>Impactos da Indústria 4.0</h1>
+
+    <section class="reveal">
       <h2>Impactos econômicos</h2>
-      <ul>
+      <ul class="li">
         <li>Aumento de produtividade e redução de custos operacionais.</li>
         <li>Personalização em massa com custo próximo à produção seriada.</li>
         <li>Novos modelos de negócio baseados em serviços e dados.</li>
@@ -30,22 +37,32 @@
       </ul>
     </section>
 
-    <section>
+    <section class="reveal">
       <h2>Impactos sociais e no trabalho</h2>
-      <table>
-        <thead>
-          <tr><th>Oportunidades</th><th>Desafios</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Ambientes mais seguros e ergonômicos</td><td>Substituição de tarefas repetitivas</td></tr>
-          <tr><td>Novas ocupações técnicas e analíticas</td><td>Necessidade de requalificação contínua</td></tr>
-          <tr><td>Trabalho remoto e assistido</td><td>Desigualdade no acesso à tecnologia</td></tr>
-        </tbody>
-      </table>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Oportunidades</th><th>Desafios</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ambientes mais seguros e ergonômicos</td><td>Substituição de tarefas repetitivas</td></tr>
+            <tr><td>Novas ocupações técnicas e analíticas</td><td>Necessidade de requalificação contínua</td></tr>
+            <tr><td>Trabalho remoto e assistido</td><td>Desigualdade no acesso à tecnologia</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section>
+    <section class="reveal">
       <h2>Impactos ambientais</h2>
-      <p>O uso eficiente de energia e matéria-prima, aliado à manutenção preditiva
-      e à economia circular, reduz desperdícios. Por outro lado, cresce o consumo
-      
+      <div class="note">
+        <p>O uso eficiente de energia e matéria-prima, aliado à manutenção preditiva e à economia circular, reduz desperdícios. Por outro lado, cresce o consumo de energia de data centers e o volume de resíduos eletrônicos, exigindo políticas de descarte e reciclagem.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Projeto acadêmico sobre Indústria 4.0 — Fábio Aguiar · © <span id="ano"></span></p></footer>
+  <button id="top">↑</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
