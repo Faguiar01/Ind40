@@ -1,113 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Atividades Interativas — Indústria 4.0</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atividades Interativas · Indústria 4.0</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-  <div class="nav-wrap">
-    <a href="index.html" class="logo">⚙️ Indústria 4.0</a>
-    <button class="burger">☰</button>
-    <nav>
-      <a href="index.html">Início</a><a href="revolucoes.html">Revoluções</a>
-      <a href="tecnologias.html">Tecnologias</a><a href="impactos.html">Impactos</a>
-      <a href="atividades.html" class="active">Atividades</a>
-      <a href="referencias.html">Referências</a><button id="theme">🌙</button>
-    </nav>
-  </div><div id="bar"></div>
-</header>
-
-<main>
-  <p class="eyebrow">Pratique</p>
-  <h2>Atividades interativas</h2>
-  <p class="sub">Quatro dinâmicas para fixar o conteúdo. Nada é enviado a servidores.</p>
-
-  <section>
-    <h2>1 · Quiz — 10 questões</h2>
-    <p class="sub">Feedback imediato e explicação em cada resposta.</p>
-    <div class="quiz" id="quiz"></div>
-  </section>
-
-  <section>
-    <h2>2 · Jogo de associação</h2>
-    <p class="sub">Arraste cada tecnologia para a aplicação correspondente e confira o resultado.</p>
-    <div class="dd">
-      <div class="pool" id="pool">
-        <span class="chip" data-key="a">IoT</span>
-        <span class="chip" data-key="b">Gêmeo Digital</span>
-        <span class="chip" data-key="c">Impressão 3D</span>
-        <span class="chip" data-key="d">Realidade Aumentada</span>
-        <span class="chip" data-key="e">Machine Learning</span>
-      </div>
-      <div>
-        <div class="zone" data-key="a"><small>Sensores enviando dados de vibração em tempo real</small></div>
-        <div class="zone" data-key="b"><small>Simular a linha de montagem antes de mudá-la</small></div>
-        <div class="zone" data-key="c"><small>Fabricar peça de reposição sob demanda</small></div>
-        <div class="zone" data-key="d"><small>Projetar instruções de reparo sobre a máquina</small></div>
-        <div class="zone" data-key="e"><small>Prever falha analisando padrões históricos</small></div>
-      </div>
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">⚙️ Indústria 4.0</a>
+      <button class="burger">☰</button>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="revolucoes.html">Revoluções</a>
+        <a href="tecnologias.html">Tecnologias</a>
+        <a href="impactos.html">Impactos</a>
+        <a href="atividades.html" class="active">Atividades</a>
+        <a href="encontros.html">Encontros</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="referencias.html">Referências</a>
+        <button id="theme">🌙</button>
+      </nav>
     </div>
-    <button class="btn btn-p" id="checkDD" style="margin-top:1.2rem">Verificar respostas</button>
-    <div id="ddRes"></div>
-  </section>
+    <div id="bar"></div>
+  </header>
 
-  <section>
-    <h2>3 · Simulador de fábrica inteligente</h2>
-    <p class="sub">Ajuste os investimentos e observe o efeito nos indicadores.</p>
-    <div class="sim" id="sim">
-      <label>Nível de automação — <span id="aV">40%</span></label>
-      <input type="range" id="auto" min="0" max="100" value="40">
-      <label>Sensores IoT instalados — <span id="sV">50</span></label>
-      <input type="range" id="sens" min="0" max="100" value="50">
-      <label>Qualificação da equipe — <span id="qV">50%</span></label>
-      <input type="range" id="qual" min="0" max="100" value="50">
-      <div class="out">
-        <div class="stat"><b id="oProd">—</b><small>Produtividade</small></div>
-        <div class="stat"><b id="oCusto">—</b><small>Custo unitário</small></div>
-        <div class="stat"><b id="oFalha">—</b><small>Taxa de falhas</small></div>
-        <div class="stat"><b id="oRoi">—</b><small>ROI estimado</small></div>
+  <main>
+    <p class="eyebrow">Pratique</p>
+    <h2>Atividades interativas</h2>
+    <p class="sub">Quatro dinâmicas para fixar o conteúdo. Nada é enviado a servidores.</p>
+
+    <section class="reveal">
+      <h2>1 · Quiz — 12 questões</h2>
+      <p class="sub">Feedback imediato e explicação em cada resposta.</p>
+      <div class="quiz" id="quiz"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>2 · Jogo de associação</h2>
+      <p class="sub">Arraste cada tecnologia para a aplicação correspondente e confira o resultado.</p>
+      <div class="dd">
+        <div class="pool" id="pool">
+          <span class="chip" data-key="a">IoT</span>
+          <span class="chip" data-key="b">Gêmeo Digital</span>
+          <span class="chip" data-key="c">Impressão 3D</span>
+          <span class="chip" data-key="d">Realidade Aumentada</span>
+          <span class="chip" data-key="e">Machine Learning</span>
+        </div>
+        <div>
+          <div class="zone" data-key="a"><small>Sensores enviando dados de vibração em tempo real</small></div>
+          <div class="zone" data-key="b"><small>Simular a linha de montagem antes de mudá-la</small></div>
+          <div class="zone" data-key="c"><small>Fabricar peça de reposição sob demanda</small></div>
+          <div class="zone" data-key="d"><small>Projetar instruções de reparo sobre a máquina</small></div>
+          <div class="zone" data-key="e"><small>Prever falha analisando padrões históricos</small></div>
+        </div>
       </div>
-      <p class="note" style="margin-top:1.5rem">Observe: automação sem qualificação da equipe eleva o custo.
-        Tecnologia só gera retorno quando acompanhada de gente preparada.</p>
-    </div>
-  </section>
+      <button class="btn btn-p" id="checkDD" style="margin-top:1.2rem">Verificar respostas</button>
+      <div id="ddRes"></div>
+    </section>
 
-  <section>
-    <h2>4 · Flashcards</h2>
-    <p class="sub">Clique no cartão para revelar a definição.</p>
-    <div class="grid">
-      <div class="fc"><div class="fc-in">
-        <div class="fc-f">Sistema Ciber-Físico</div>
-        <div class="fc-bk">Integração entre componentes físicos e software que se monitoram e controlam mutuamente.</div>
-      </div></div>
-      <div class="fc"><div class="fc-in">
-        <div class="fc-f">Manutenção Preditiva</div>
-        <div class="fc-bk">Uso de dados de sensores e IA para antecipar falhas antes que ocorram.</div>
-      </div></div>
-      <div class="fc"><div class="fc-in">
-        <div class="fc-f">Customização em Massa</div>
-        <div class="fc-bk">Produzir itens personalizados mantendo a eficiência da produção em escala.</div>
-      </div></div>
-      <div class="fc"><div class="fc-in">
-        <div class="fc-f">Edge Computing</div>
-        <div class="fc-bk">Processar dados próximo à origem, reduzindo latência e tráfego de rede.</div>
-      </div></div>
-      <div class="fc"><div class="fc-in">
-        <div class="fc-f">Cobot</div>
-        <div class="fc-bk">Robô colaborativo que atua junto a humanos com sensores de segurança.</div>
-      </div></div>
-      <div class="fc"><div class="fc-in">
-        <div class="fc-f">Reskilling</div>
-        <div class="fc-bk">Requalificação do trabalhador para novas funções criadas pela tecnologia.</div>
-      </div></div>
-    </div>
-  </section>
-</main>
+    <section class="reveal">
+      <h2>3 · Simulador de fábrica inteligente</h2>
+      <p class="sub">Ajuste os investimentos e observe o efeito nos indicadores.</p>
+      <div class="sim" id="sim">
+        <label>Nível de automação — <span id="aV">40%</span></label>
+        <input type="range" id="auto" min="0" max="100" value="40">
+        <label>Sensores IoT instalados — <span id="sV">50</span></label>
+        <input type="range" id="sens" min="0" max="100" value="50">
+        <label>Qualificação da equipe — <span id="qV">50%</span></label>
+        <input type="range" id="qual" min="0" max="100" value="50">
+        <div class="out">
+          <div class="stat"><b id="oProd">---</b><small>Produtividade</small></div>
+          <div class="stat"><b id="oCusto">---</b><small>Custo unitário</small></div>
+          <div class="stat"><b id="oFalha">---</b><small>Taxa de falhas</small></div>
+          <div class="stat"><b id="oRoi">---</b><small>ROI estimado</small></div>
+        </div>
+        <p class="note" style="margin-top:1.5rem">Observe: automação sem qualificação da equipe eleva o custo. Tecnologia só gera retorno quando acompanhada de gente preparada.</p>
+      </div>
+    </section>
 
-<footer><p>Projeto acadêmico sobre Indústria 4.0 — Fábio Aguiar · © 2026</p></footer>
-<button id="top">↑</button>
-<script src="assets/js/app.js"></script>
+    <section class="reveal">
+      <h2>4 · Flashcards</h2>
+      <p class="sub">Clique no cartão para revelar a definição.</p>
+      <div class="grid">
+        <div class="fc"><div class="fc-in"><div class="fc-f">Sistema Ciber-Físico</div><div class="fc-bk">Integração entre componentes físicos e software que se monitoram e controlam mutuamente.</div></div></div>
+        <div class="fc"><div class="fc-in"><div class="fc-f">Manutenção Preditiva</div><div class="fc-bk">Uso de dados de sensores e IA para antecipar falhas antes que ocorram.</div></div></div>
+        <div class="fc"><div class="fc-in"><div class="fc-f">Customização em Massa</div><div class="fc-bk">Produzir itens personalizados mantendo a eficiência da produção em escala.</div></div></div>
+        <div class="fc"><div class="fc-in"><div class="fc-f">Edge Computing</div><div class="fc-bk">Processar dados próximo à origem, reduzindo latência e tráfego de rede.</div></div></div>
+        <div class="fc"><div class="fc-in"><div class="fc-f">Cobot</div><div class="fc-bk">Robô colaborativo que atua junto a humanos com sensores de segurança.</div></div></div>
+        <div class="fc"><div class="fc-in"><div class="fc-f">Reskilling</div><div class="fc-bk">Requalificação do trabalhador para novas funções criadas pela tecnologia.</div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto acadêmico · Fábio Aguiar · © 2026</p>
+  </footer>
+  <button id="top">↑</button>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
